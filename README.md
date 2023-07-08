@@ -1,4 +1,4 @@
-# Flask-MongoEngine
+# Flask-ME is forked a Flask-MongoEngine
 
 [![PyPI version](https://badge.fury.io/py/flask-mongoengine.svg)](https://badge.fury.io/py/flask-mongoengine)
 [![CI Tests](https://github.com/MongoEngine/flask-mongoengine/actions/workflows/tests.yml/badge.svg)](https://github.com/MongoEngine/flask-mongoengine/actions/workflows/tests.yml)
@@ -24,7 +24,7 @@ used together.
 
 ```bash
 # For Flask >= 2.0.0
-pip install flask-mongoengine
+pip install flask-me
 ```
 
 We still maintain special case for [Flask] = 1.1.4 support (the latest version in 1.x.x
@@ -33,7 +33,7 @@ extra option.
 
 ```bash
 # With Flask 1.1.4 dependencies
-pip install flask-mongoengine[legacy]
+pip install flask-me[legacy]
 ```
 
 ### Installation with WTFForms and Flask-WTF support
@@ -43,7 +43,7 @@ will extend project dependencies with [Flask-WTF], [WTFForms] and related packag
 
 ```bash
 # With Flask-WTF and WTFForms dependencies
-pip install flask-mongoengine[wtf]
+pip install flask-me[wtf]
 ```
 
 ### Installation with Flask Debug Toolbar support
@@ -54,14 +54,14 @@ you need to install flask-mongoengine with related support, use:
 
 ```bash
 # With FlaskDebugToolbar dependencies
-pip install flask-mongoengine[toolbar]
+pip install flask-me[toolbar]
 ```
 
 ### Installation with all features together
 
 ```bash
 # With Flask-WTF, WTFForms and FlaskDebugToolbar dependencies
-pip install flask-mongoengine[wtf,toolbar]
+pip install flask-me[wtf,toolbar]
 ```
 
 ## Flask configuration
