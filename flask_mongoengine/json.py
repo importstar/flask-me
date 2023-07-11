@@ -92,7 +92,7 @@ if use_json_provider():
 
     MongoEngineJSONProvider = _update_json_provider(DefaultJSONProvider)
 else:
-    from flask.json import JSONEncoder
+    from json import JSONEncoder
 
     MongoEngineJSONEncoder = _make_encoder(JSONEncoder)
 # End of compatibility code
