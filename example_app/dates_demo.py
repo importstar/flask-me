@@ -20,7 +20,7 @@ class DateTimeModel(db.Document):
         wtf_options={"render_kw": {"step": "1"}}
     )
     complex_datetime_microseconds = db.ComplexDateTimeField(
-        wtf_options={"format": "%Y-%m-%d %H:%M:%S.%f"},
+        wtf_options={"render_kw": {"step": "0.001"}}
     )
 
 
