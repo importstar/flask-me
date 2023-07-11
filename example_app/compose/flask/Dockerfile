@@ -1,4 +1,4 @@
-FROM python:3.7-slim as dev
+FROM python:3.10-slim as dev
 
 ENV PYTHONUNBUFFERED 1
 RUN apt-get update && \

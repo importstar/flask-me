@@ -1,3 +1,6 @@
+import sys
+
+sys.path.append(".")
 import flask
 from flask_debugtoolbar import DebugToolbarExtension
 from pymongo import monitoring
