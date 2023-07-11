@@ -11,14 +11,16 @@ class DateTimeModel(db.Document):
     any_string = db.StringField()
     date = db.DateField()
     datetime = db.DateTimeField()
-    datetime_no_sec = db.DateTimeField(wtf_options={"render_kw": {"step": "60"}})
+    datetime_no_sec = db.DateTimeField(
+        wtf_options={"render_kw": {"step": "60"}, "format": "%Y-%m-%dT%H:%M"}
+    )
     datetime_ms = db.DateTimeField(wtf_options={"render_kw": {"step": "0.001"}})
     complex_datetime = db.ComplexDateTimeField()
     complex_datetime_sec = db.ComplexDateTimeField(
         wtf_options={"render_kw": {"step": "1"}}
     )
     complex_datetime_microseconds = db.ComplexDateTimeField(
-        wtf_field_class=DateTimeField, wtf_options={"format": "%Y-%m-%d %H:%M:%S.%f"}
+        wtf_options={"format": "%Y-%m-%d %H:%M:%S.%f"},
     )
 
 
