@@ -45,7 +45,7 @@ authors = [
 ]
 maintainers = [
   {name = "Andrey Shpak", email = "ashpak@ashpak.ru"},
-  {name = "Surawut Santong-in", email = "mrwoot@gmail.com"},
+  {name = "Surawut Santong-in", email = "surawut.kong@gmail.com"},
   {name = "Thanathip Limna", email = "thanathip.limna@gmail.com"},
 ]
 dynamic = ["version"]
