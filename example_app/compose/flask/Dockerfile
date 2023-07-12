@@ -1,12 +1,12 @@
-FROM python:3.10-slim as dev
+FROM python:3.11-slim as dev
 
 ENV PYTHONUNBUFFERED 1
 RUN apt-get update && \
     apt-get install git -y --no-install-recommends && \
     rm -rf /var/lib/apt/lists/*
 RUN groupadd -r flask && useradd -r -g flask flask
-COPY --chown=flask . /flask_mongoengine
+COPY --chown=flask . /flask_me
 RUN pip install --upgrade pip  \
-    && pip install -e /flask_mongoengine[toolbar,wtf] \
+    && pip install -e /flask_me[toolbar,wtf] \
     && pip install Faker Pillow
-WORKDIR /flask_mongoengine
+WORKDIR /flask_me
