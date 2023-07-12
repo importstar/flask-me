@@ -1,6 +1,7 @@
 """Extension of app JSON capabilities."""
 import flask
 import pytest
+import json
 
 from flask_mongoengine import MongoEngine
 from flask_mongoengine.json import use_json_provider
@@ -41,7 +42,7 @@ def extended_db(app):
     test_db.connection["default"].drop_database(db_name)
 
 
-class DummyEncoder(flask.json.JSONEncoder):
+class DummyEncoder(json.JSONEncoder):
     """
     An example encoder which a user may create and override
     the apps json_encoder with.
