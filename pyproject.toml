@@ -96,6 +96,7 @@ version = {attr = "flask_mongoengine._version.version"}
 
 [tool.setuptools_scm]
 write_to = "flask_mongoengine/_version.py"
+local_scheme = "no-local-version"
 
 [tool.black]
 line-length = 88
