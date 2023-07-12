@@ -1,6 +1,6 @@
 # Flask-ME is forked a Flask-MongoEngine
 
-[![PyPI version](https://badge.fury.io/py/flask-mongoengine.svg)](https://badge.fury.io/py/flask-mongoengine)
+[![PyPI version](https://badge.fury.io/py/flask-me.svg)](https://badge.fury.io/py/flask-me)
 [![CI Tests](https://github.com/MongoEngine/flask-mongoengine/actions/workflows/tests.yml/badge.svg)](https://github.com/MongoEngine/flask-mongoengine/actions/workflows/tests.yml)
 [![Documentation Status](https://readthedocs.org/projects/flask-mongoengine/badge/?version=latest)](http://docs.mongoengine.org/projects/flask-mongoengine/en/latest/?badge=latest)
 [![Maintainability](https://api.codeclimate.com/v1/badges/6fb8ae00b1008f5f1b20/maintainability)](https://codeclimate.com/github/MongoEngine/flask-mongoengine/maintainability)
