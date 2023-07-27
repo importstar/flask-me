@@ -26,7 +26,7 @@ classifiers = [
   "Framework :: Flask",
 ]
 dependencies = [
-  "Flask>=2.3.2",
+  "Flask>=2.0",
   "mongoengine>=0.21",
   'importlib-metadata; python_version<"3.8"',
 ]
